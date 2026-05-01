@@ -1,0 +1,88 @@
+/* --- Home Specific Styles (home.css) --- */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)),
+                url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 1rem;
+}
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    max-width: 700px;
+    margin-inline: auto;
+    opacity: 0.9;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    padding: 2rem 0;
+}
+
+.card {
+    background: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 1px solid #f1f5f9;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #2563eb;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2563eb;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center; /* Menyejajarkan teks dan gambar secara vertikal */
+    list-style: none;
+    gap: 2rem; /* Jarak antar menu */
+}
+
+.foto {
+    width: 40px; /* Atur ukuran lebar logo sesuai keinginan */
+    height: auto;
+    object-fit: contain;
+    margin-left: 10px; /* Memberi sedikit jarak tambahan dari menu terakhir */
+}

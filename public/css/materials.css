@@ -1,0 +1,52 @@
+/* --- Materials Specific Styles (materials.css) --- */
+.materi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.materi-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.materi-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.materi-header {
+    background: linear-gradient(135deg, #2563eb, #0ea5e9);
+    color: #ffffff;
+    padding: 1.5rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.materi-body {
+    padding: 2rem;
+}
+
+.materi-list {
+    list-style: none;
+}
+
+.materi-list li {
+    padding: 10px 0;
+    color: #475569;
+    position: relative;
+    padding-left: 25px;
+}
+
+.materi-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-weight: bold;
+}

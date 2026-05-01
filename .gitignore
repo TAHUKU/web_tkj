@@ -1,0 +1,8 @@
+# Jangan unggah folder modul node
+node_modules/
+
+# Jangan unggah file rahasia
+.env
+
+# Jangan unggah data lokal jika bersifat rahasia
+data.json
